@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DguvComponentsComponent } from './dguv-components.component';
+import { DguvSampleComponent } from './dguv-sample-components.component';
 
-describe('DguvComponentsComponent', () => {
-  let component: DguvComponentsComponent;
-  let fixture: ComponentFixture<DguvComponentsComponent>;
+describe('DguvSampleComponent', () => {
+  let component: DguvSampleComponent;
+  let fixture: ComponentFixture<DguvSampleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DguvComponentsComponent ]
+      declarations: [ DguvSampleComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DguvComponentsComponent);
+    fixture = TestBed.createComponent(DguvSampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

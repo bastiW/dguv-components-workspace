@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { DguvComponentsComponent } from './dguv-components.component';
+import { DguvSampleComponent } from './DGUV-sample-component/dguv-sample-components.component';
 
 
 
 @NgModule({
   declarations: [
-    DguvComponentsComponent
+    DguvSampleComponent
   ],
   imports: [
   ],
   exports: [
-    DguvComponentsComponent
+    DguvSampleComponent
   ]
 })
 export class DguvComponentsModule { }

@@ -5,9 +5,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "dguv-components": [
-        "dist/dguv-components"
-      ]
+      "dguv-components": ["projects/dguv-components/src/public-api"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,

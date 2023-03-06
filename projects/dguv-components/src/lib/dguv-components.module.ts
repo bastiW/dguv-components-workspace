@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { DguvSampleComponent } from './DGUV-sample-component/dguv-sample-components.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -8,9 +9,10 @@ import { DguvSampleComponent } from './DGUV-sample-component/dguv-sample-compone
     DguvSampleComponent
   ],
   imports: [
+    MatButtonModule
   ],
   exports: [
-    DguvSampleComponent
+    DguvSampleComponent,
   ]
 })
 export class DguvComponentsModule { }

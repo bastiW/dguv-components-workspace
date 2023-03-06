@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <p>
       dguv-components works!
     </p>
+    <button mat-raised-button>Basic</button>
   `,
   styles: [
   ]

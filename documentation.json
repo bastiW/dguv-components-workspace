@@ -44,7 +44,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "id": "component-ButtonComponent-35240b0e97c3a569a6d21b0745b70b26515f020bee75e8a61d6cf8e64e4a20ad099614604c6cf70a4e24bcb4184ec0838e680ba621d66dee308cdfb8ba8d80af",
             "file": "projects/stories/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -56,7 +56,7 @@
                 "./button.css"
             ],
             "styles": [],
-            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "template": "<h1>Hello</h1>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -66,7 +66,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nWhat background color to use\n",
                     "description": "<p>What background color to use</p>\n",
-                    "line": 26,
+                    "line": 19,
                     "type": "string",
                     "decorators": []
                 },
@@ -77,15 +77,15 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 711,
-                            "end": 724,
+                            "pos": 552,
+                            "end": 565,
                             "flags": 4227072,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "kind": 325,
                             "tagName": {
-                                "pos": 712,
-                                "end": 720,
+                                "pos": 553,
+                                "end": 561,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -97,7 +97,7 @@
                     ],
                     "rawdescription": "\n\nButton contents\n\n",
                     "description": "<p>Button contents</p>\n",
-                    "line": 40,
+                    "line": 33,
                     "type": "string",
                     "decorators": []
                 },
@@ -108,7 +108,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nIs this the principal call to action on the page?\n",
                     "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 20,
+                    "line": 13,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -119,7 +119,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nHow large should the button be?\n",
                     "description": "<p>How large should the button be?</p>\n",
-                    "line": 32,
+                    "line": 25,
                     "type": "\"small\" | \"medium\" | \"large\"",
                     "decorators": []
                 }
@@ -132,7 +132,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nOptional click handler\n",
                     "description": "<p>Optional click handler</p>\n",
-                    "line": 46,
+                    "line": 39,
                     "type": "EventEmitter"
                 }
             ],
@@ -145,7 +145,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: `<h1>Hello</h1>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -161,14 +161,14 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 48
+                        "line": 41
                     }
                 }
             }
         },
         {
             "name": "DguvSampleComponent",
-            "id": "component-DguvSampleComponent-f6111eca6a5b6d10f5820e10264005e48656b42a528c6b073d8788b1cde0b3330a80095bf6b0779938939b8c6633e1057c1524b7a92272a06b96964a1100f82d",
+            "id": "component-DguvSampleComponent-8ca9bc910dd800320fafc4056128d3647f836a32c8311be144b1ede2825d21d1b895d7ee70b9215da23ab0ed7e2cc445ce96610e35fda487fb0c4a9a8d6f2661",
             "file": "projects/dguv-components/src/lib/DGUV-sample-component/dguv-sample-components.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -178,7 +178,7 @@
             "selector": "lib-dguv-components",
             "styleUrls": [],
             "styles": [],
-            "template": "<p>\n  dguv-components works!\n</p>\n",
+            "template": "<p>\n  dguv-components works!\n</p>\n<button mat-raised-button>Basic</button>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -192,7 +192,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-dguv-components',\n  template: `\n    <p>\n      dguv-components works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class DguvSampleComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-dguv-components',\n  template: `\n    <p>\n      dguv-components works!\n    </p>\n    <button mat-raised-button>Basic</button>\n  `,\n  styles: [\n  ]\n})\nexport class DguvSampleComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -201,13 +201,13 @@
     "modules": [
         {
             "name": "DguvComponentsModule",
-            "id": "module-DguvComponentsModule-ff0a5e3d0b2b3030ec044e1a82ce7808bf7ac03190258ab2d06ebd512b4600ba837b9621ff8d2f46cbbc69a9fbbd37f24d5d8f59539d22ca10babc7f9e5fc4e4",
+            "id": "module-DguvComponentsModule-d43641554070a0ff111e2dbf4ff53c1313348a00d3cbbc3e0c73cde61ba8bc727a5cb8794403a2722d1a90da8e42e3aa15c42cf6192ea16f3b876eb30138c7d9",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/dguv-components/src/lib/dguv-components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { DguvSampleComponent } from './DGUV-sample-component/dguv-sample-components.component';\n\n\n\n@NgModule({\n  declarations: [\n    DguvSampleComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    DguvSampleComponent\n  ]\n})\nexport class DguvComponentsModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { DguvSampleComponent } from './DGUV-sample-component/dguv-sample-components.component';\nimport {MatButtonModule} from '@angular/material/button';\n\n\n\n@NgModule({\n  declarations: [\n    DguvSampleComponent\n  ],\n  imports: [\n    MatButtonModule\n  ],\n  exports: [\n    DguvSampleComponent,\n  ]\n})\nexport class DguvComponentsModule { }\n",
             "children": [
                 {
                     "type": "providers",
